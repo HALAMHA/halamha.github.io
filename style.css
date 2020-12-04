@@ -19,7 +19,6 @@ body {
   height: 50px;
   line-height: 50px;
   font-size: 24px;
-  font-weight: bold;
   margin-left: 10px;
 }
 
@@ -27,8 +26,8 @@ header {
   display: flex;
   position: fixed;
   width: 100%;
-  color: whitesmoke;
-  background: lightgrey;
+  color: white;
+  background: #669999;
   justify-content: space-between;
 }
 
@@ -61,6 +60,7 @@ header nav {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
+  font-weight: bold;
 }
 
 .nav-links li a:hover {
@@ -83,7 +83,7 @@ header nav {
 .menu-btn-hamburger {
   width: 30px;
   height: 3px;
-  background: grey;
+  background: #1e2f2f;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -94,7 +94,7 @@ header nav {
   position: absolute;
   width: 30px;
   height: 3px;
-  background: grey;
+  background: #1e2f2f;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -130,16 +130,42 @@ section {
   text-align: center;
 }
 
+h1 {
+  line-height: 2.5em;
+  color: #324e4e;
+}
+
+h2 {
+  font-size: medium;
+}
+
 /* Contact */
+.contact {
+  flex-direction: column;
+}
+
+.contact-item {
+  padding: 0.5em;
+  margin: 2em;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #008080;
+}
+
+.contact-item a:hover {
+  color: #00b3b3;
+}
 
 /* FOOTER */
 
 footer {
   height: 4vh;
-  color: whitesmoke;
-  background-color: lightgrey;
+  color: white;
+  background-color: #669999;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 0.5em;
 }
 
 /* MEDIA */
@@ -160,6 +186,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background: #669999;
   }
 
   .nav-links li a {
