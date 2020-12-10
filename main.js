@@ -22,3 +22,14 @@ function displayMenu() {
     menu.style.display = 'none';
   }
 }
+
+
+window.addEventListener('resize', resetmenu);
+
+function resetmenu() {
+  if (window.innerWidth > 768) {
+    document.querySelector('.nav-links').style.display = 'flex';
+  } else {
+    document.querySelector('.nav-links').style.display = 'none';
+  }
+}
