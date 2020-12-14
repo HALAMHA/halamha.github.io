@@ -158,11 +158,10 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 
 .projects img {
-  min-width: 280px;
+  width: 100%;
   margin-bottom: 12px;
 }
 
