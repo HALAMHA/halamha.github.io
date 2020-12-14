@@ -11,7 +11,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: whitesmoke;
+  background-color: #f2f2f2;
 }
 
 /* NAVIGATION  */
@@ -129,11 +129,11 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #213e3b;
 }
 
 h1 {
   line-height: 2.5em;
-  color: #324e4e;
 }
 
 h2 {
@@ -158,7 +158,7 @@ h2 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 20px;
 }
 
 .projects img {
@@ -167,8 +167,9 @@ h2 {
 }
 
 .content {
-  padding: 15px;
-  margin-bottom: 25px;
+  padding: 1em;
+  margin: 2em;
+  background: #e6e6e6;
 }
 
 .content h3 {
@@ -235,7 +236,13 @@ footer {
     border: none;
   }
 
+  .content {
+    padding: 1.5em;
+    margin: 1em;
+  }
+
   .projects {
+    margin: 2em;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
@@ -276,6 +283,7 @@ footer {
 
   .content {
     padding: 25px;
+    margin: 15px;
   }
   .contact-container {
     display: flex;
