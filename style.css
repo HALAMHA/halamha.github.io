@@ -42,7 +42,6 @@ header nav {
 }
 
 .nav-links {
-  display: none;
   text-align: center;
   flex-direction: column;
   margin: 0 auto;
@@ -67,6 +66,10 @@ header nav {
 .nav-links li a:hover {
   color: whitesmoke;
   background-color: darkgrey;
+}
+
+.hide-mobile {
+  display: none;
 }
 
 /* HAMBURGER MENU */
@@ -232,6 +235,10 @@ footer {
     display: none;
   }
 
+  .hide-mobile {
+    display: flex;
+  }
+
   header nav {
     position: relative;
     height: 100%;
@@ -279,6 +286,10 @@ footer {
 @media (min-width: 1651px) {
   .menu-btn {
     display: none;
+  }
+
+  .hide-mobile {
+    display: flex;
   }
 
   header nav {
