@@ -30,6 +30,7 @@ header {
   color: white;
   background: #38717a;
   justify-content: space-between;
+  z-index: 5;
 }
 
 header nav {
@@ -148,11 +149,27 @@ h2 {
 .home h1 {
   font-size: 28px;
   text-transform: uppercase;
+  font-family: "Permanent Marker", cursive;
 }
 
 .home p {
   font-size: 17px;
 }
+
+/* #marker {
+  animation: markerAnim 2.5s infinite;
+  animation-iteration-count: 1;
+}
+
+@keyframes markerAnim {
+  from {
+    transform: translate(138px, 27px);
+    z-index: 3;
+  }
+  to {
+    transform: translate(150px, 10px);
+  }
+} */
 
 #pointer {
   animation: pointerAnim 1s infinite alternate-reverse;
@@ -237,6 +254,11 @@ h2 {
   text-decoration: none;
   color: rgb(151, 5, 98);
   font-weight: bold;
+  cursor: pointer;
+}
+
+.about a:hover {
+  color: rgb(255, 4, 163);
 }
 
 /* Contact */
@@ -319,7 +341,6 @@ footer {
 
   .about {
     position: relative;
-    z-index: -1;
   }
 
   .about-text {
@@ -375,18 +396,17 @@ footer {
     margin: 15px;
   }
 
+  .content:hover {
+    background-color: #95b7b7;
+  }
+
   .about {
     position: relative;
-    z-index: -1;
   }
 
   .about-text {
     position: absolute;
     top: 15em;
-  }
-
-  .content:hover {
-    background-color: #95b7b7;
   }
 
   .about p {

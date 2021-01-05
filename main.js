@@ -1,3 +1,4 @@
+// Hamburger menu
 const menuBtn = document.querySelector('.menu-btn');
 menuBtn.addEventListener('click', () => {
   let menu = document.querySelector('.nav-links');
