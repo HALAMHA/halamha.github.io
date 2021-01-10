@@ -60,6 +60,7 @@ header nav {
   padding: 0 20px;
   font-weight: 500;
   font-size: 17px;
+  text-transform: uppercase;
 }
 
 .nav-links li a:hover {
@@ -150,21 +151,6 @@ h1 {
 .home p {
   font-size: 17px;
 }
-
-/* #marker {
-  animation: markerAnim 2.5s infinite;
-  animation-iteration-count: 1;
-}
-
-@keyframes markerAnim {
-  from {
-    transform: translate(138px, 27px);
-    z-index: 3;
-  }
-  to {
-    transform: translate(150px, 10px);
-  }
-} */
 
 #pointer {
   animation: pointerAnim 1s infinite alternate-reverse;
@@ -276,6 +262,43 @@ h2 {
   color: #00b3b3;
 }
 
+/* TO TOP BUTTON */
+.top-link {
+  transition: all 0.8s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1em 1em 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: lightgrey;
+}
+
+.top-link svg {
+  fill: rgb(63, 61, 61);
+  width: 24px;
+  height: 12px;
+}
+
+.show {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.top-link:hover {
+  background-color: #828080;
+}
+
 /* FOOTER */
 footer {
   color: black;
@@ -285,6 +308,21 @@ footer {
 }
 
 /* MEDIA */
+@media (min-width: 551px) and (max-width: 767px) {
+  .projects {
+    width: 75%;
+  }
+
+  .about {
+    position: relative;
+  }
+
+  .about-text {
+    position: absolute;
+    top: 10em;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1650px) {
   .menu-btn {
     display: none;
@@ -316,15 +354,6 @@ footer {
     font-size: 2.2em;
   }
 
-  .content {
-    padding: 1.5em;
-    margin: 1em;
-  }
-
-  .content:hover {
-    background-color: #95b7b7;
-  }
-
   .projects {
     margin: 2em;
     display: grid;
@@ -335,6 +364,15 @@ footer {
   .projects img {
     min-width: 300px;
     max-width: 350px;
+  }
+
+  .content {
+    padding: 1.5em;
+    margin: 1em;
+  }
+
+  .content:hover {
+    background-color: #95b7b7;
   }
 
   .about {
