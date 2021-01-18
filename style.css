@@ -58,7 +58,7 @@ header nav {
   border-top: solid 0.5px #808080;
   line-height: 50px;
   padding: 0 20px;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 17px;
   text-transform: uppercase;
 }
@@ -255,7 +255,7 @@ h2 {
 
 .contact-item a {
   text-decoration: none;
-  color: #008080;
+  color: #006666;
 }
 
 .contact-item a:hover {
@@ -301,7 +301,7 @@ h2 {
 
 /* FOOTER */
 footer {
-  color: black;
+  color: whitesmoke;
   background: #38717a;
   text-align: center;
   padding-top: 0.5em;
@@ -369,6 +369,7 @@ footer {
   .content {
     padding: 1.5em;
     margin: 1em;
+    min-height: 415px;
   }
 
   .content:hover {
@@ -434,6 +435,7 @@ footer {
   .content {
     padding: 25px;
     margin: 15px;
+    min-height: 365px;
   }
 
   .content:hover {
